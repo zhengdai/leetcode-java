@@ -5,7 +5,6 @@ package com.zd.leetcode;
  * @date 2020年03月09日
  */
 public class Solution2 {
-
     public static class ListNode {
         int val;
         ListNode next;
@@ -100,5 +99,4 @@ public class Solution2 {
         result.next = add(p1 != null ? p1.next : null, p2 != null ? p2.next : null, sum / 10);
         return result;
     }
-
 }
