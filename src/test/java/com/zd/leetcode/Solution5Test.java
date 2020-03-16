@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @author zhengdai
  * @date 2020年03月13日
  */
-public class SolutionTest5 {
+public class Solution5Test {
     private static Solution5 solution5;
 
     @BeforeAll

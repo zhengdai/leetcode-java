@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  * @author zhengdai
  * @date 2020年03月14日
  */
-public class SolutionTest6 {
+public class Solution6Test {
     private static Solution6 solution6;
 
     @BeforeAll
