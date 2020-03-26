@@ -36,7 +36,7 @@ public class Solution15 {
                     while (left < right && nums[left] == nums[++left]) {
 
                     }
-                    while ( left < right && nums[right] == nums[--right]) {
+                    while (left < right && nums[right] == nums[--right]) {
 
                     }
                 } else if (sum > 0) {
