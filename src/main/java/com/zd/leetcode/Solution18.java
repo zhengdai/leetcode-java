@@ -20,8 +20,24 @@ public class Solution18 {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
+            int min1 = nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3];
+            if (min1 > target) {
+                break;
+            }
+            int max1 = nums[i] + nums[n - 3] + nums[n - 2] + nums[n - 1];
+            if (max1 < target) {
+                continue;
+            }
             for (int j = i + 1; j < n - 2; ++j) {
                 if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    continue;
+                }
+                int min2 = nums[i] + nums[j] + nums[j + 1] + nums[j + 2];
+                if (min2 > target) {
+                    break;
+                }
+                int max2 = nums[i] + nums[j] + nums[n - 2] + nums[n - 1];
+                if (max2 < target) {
                     continue;
                 }
                 int l = j + 1;
