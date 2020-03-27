@@ -5,15 +5,6 @@ package com.zd.leetcode;
  * @date 2020年03月09日
  */
 public class Solution2 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     private ListNode head;
     private ListNode tail;
     private int carry;

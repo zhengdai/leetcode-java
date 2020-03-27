@@ -5,13 +5,6 @@ package com.zd.leetcode;
  * @date 2020年03月26日
  */
 public class Solution19 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode tail = head;
         while (n > 0) {

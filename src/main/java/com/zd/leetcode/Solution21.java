@@ -5,13 +5,6 @@ package com.zd.leetcode;
  * @date 2020年03月26日
  */
 public class Solution21 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode p = l1;
         ListNode q = l2;

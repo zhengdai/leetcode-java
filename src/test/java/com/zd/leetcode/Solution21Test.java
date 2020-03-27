@@ -21,13 +21,13 @@ public class Solution21Test {
     @Test
     @DisplayName("merge two lists")
     public void testMergeTwoLists() {
-        Solution21.ListNode l1 = new Solution21.ListNode(1);
-        l1.next = new Solution21.ListNode(3);
-        l1.next.next = new Solution21.ListNode(5);
-        Solution21.ListNode l2 = new Solution21.ListNode(2);
-        l2.next = new Solution21.ListNode(4);
-        l2.next.next = new Solution21.ListNode(6);
-        Solution21.ListNode l3 = solution21.mergeTwoLists(l1, l2);
+        ListNode l1 = new ListNode(1);
+        l1.next = new ListNode(3);
+        l1.next.next = new ListNode(5);
+        ListNode l2 = new ListNode(2);
+        l2.next = new ListNode(4);
+        l2.next.next = new ListNode(6);
+        ListNode l3 = solution21.mergeTwoLists(l1, l2);
         assertEquals(1, l3.val);
         assertEquals(2, l3.next.val);
         assertEquals(3, l3.next.next.val);

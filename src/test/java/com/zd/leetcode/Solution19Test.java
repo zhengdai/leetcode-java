@@ -21,9 +21,9 @@ public class Solution19Test {
     @Test
     @DisplayName("remove nth from end")
     public void testRemoveNthFromEnd() {
-        Solution19.ListNode head = new Solution19.ListNode(0);
-        head.next = new Solution19.ListNode(1);
-        head.next.next = new Solution19.ListNode(2);
+        ListNode head = new ListNode(0);
+        head.next = new ListNode(1);
+        head.next.next = new ListNode(2);
         assertEquals(1, head.next.val);
         assertEquals(2, solution19.removeNthFromEnd(head, 2).next.val);
     }

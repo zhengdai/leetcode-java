@@ -9,13 +9,6 @@ import java.util.PriorityQueue;
  * 最小堆实现
  */
 public class Solution23 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
     public ListNode mergeKLists(ListNode[] lists) {
         int n;
         if (lists == null || (n = lists.length) == 0) {
