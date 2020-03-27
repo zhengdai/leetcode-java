@@ -37,9 +37,25 @@ public class Solution22Test {
     }
 
     @Test
-    @DisplayName("generate parenthesis")
+    @DisplayName("generate parenthesis3")
     public void testGenerateParenthesis3() {
         List<String> result = solution22.generateParenthesis3(5);
+        System.out.println(result);
+        assertEquals(42, result.size());
+    }
+
+    @Test
+    @DisplayName("generate parenthesis4")
+    public void testGenerateParenthesis4() {
+        List<String> result = solution22.generateParenthesis4(5);
+        System.out.println(result);
+        assertEquals(42, result.size());
+    }
+
+    @Test
+    @DisplayName("generate parenthesis5")
+    public void testGenerateParenthesis5() {
+        List<String> result = solution22.generateParenthesis5(5);
         System.out.println(result);
         assertEquals(42, result.size());
     }
