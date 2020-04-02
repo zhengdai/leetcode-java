@@ -48,7 +48,6 @@ public class Solution30 {
         if (m > 0) {
             int wordLen = words[0].length();
             int total = s.length();
-            int wordCharLen = wordLen * m;
             Map<String, Integer> allWords = initMap(words);
             for (int i = 0; i < wordLen; ++i) {
                 int left = i;
