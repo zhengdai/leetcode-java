@@ -19,7 +19,7 @@ public class Solution37Test {
     }
 
     @Test
-    @DisplayName("solve sudoku")
+    @DisplayName("test solve sudoku")
     public void testSolveSudoku() {
         char[][] board = new char[][]{
                 {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
