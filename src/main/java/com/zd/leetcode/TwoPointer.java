@@ -1,5 +1,9 @@
 package com.zd.leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TwoPointer {
     public int[] search(int[] arr, int targetSum) {
         int low = 0;
@@ -45,5 +49,40 @@ public class TwoPointer {
             }
         }
         return squares;
+    }
+
+    public List<List<Integer>> searchTriplets(int[] arr) {
+        List<List<Integer>> triplets = new ArrayList<>();
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length - 2; ++i) {
+            if (i > 0 && arr[i] == arr[i - 1]) {
+                continue;
+            }
+            searchPair(arr, -arr[i], i + 1, triplets);
+        }
+        return triplets;
+    }
+
+    private void searchPair(int[] arr, int target, int startIdx, List<List<Integer>> triplets) {
+        int high = arr.length - 1;
+        int low = startIdx;
+        while (low < high) {
+            int sum = arr[low] + arr[high];
+            if (sum > target) {
+                high--;
+            } else if (sum < target) {
+                low++;
+            } else {
+                triplets.add(Arrays.asList(-target, arr[low], arr[high]));
+                low++;
+                high--;
+                while (low < high && arr[low] == arr[low - 1]) {
+                    low++;
+                }
+                while (low < high && arr[high] == arr[high + 1]) {
+                    high--;
+                }
+            }
+        }
     }
 }

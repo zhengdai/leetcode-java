@@ -4,8 +4,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.hasItems;
 
 public class TwoPointerTest {
     private static TwoPointer twoPointer;
@@ -34,5 +39,12 @@ public class TwoPointerTest {
     public void testMakeSquares() {
         assertArrayEquals(new int[]{0, 1, 4, 4, 9}, twoPointer.makeSquares(new int[]{-2, -1, 0, 2, 3}), "测试不通过");
         assertArrayEquals(new int[]{0, 1, 1, 4, 9}, twoPointer.makeSquares(new int[]{-3, -1, 0, 1, 2}), "测试不通过");
+    }
+
+    @Test
+    @DisplayName("search triplets")
+    public void testSearchTriplets() {
+        System.out.println(twoPointer.searchTriplets(new int[]{-3, 0, 1, 2, -1, 1, -2}));
+        System.out.println(twoPointer.searchTriplets(new int[]{-5, 2, -1, -2, 3}));
     }
 }
