@@ -47,4 +47,19 @@ public class TwoPointerTest {
         System.out.println(twoPointer.searchTriplets(new int[]{-3, 0, 1, 2, -1, 1, -2}));
         System.out.println(twoPointer.searchTriplets(new int[]{-5, 2, -1, -2, 3}));
     }
+
+    @Test
+    @DisplayName("search triplet")
+    public void testSearchTriplet() {
+        assertEquals(1, twoPointer.searchTriplet(new int[]{-2, 0, 1, 2}, 2));
+        assertEquals(0, twoPointer.searchTriplet(new int[]{-3, -1, 1, 2}, 1));
+        assertEquals(3, twoPointer.searchTriplet(new int[]{1, 0, 1, 1}, 100));
+    }
+
+    @Test
+    @DisplayName("search triplets")
+    public void testSearchMinTriplets() {
+        assertEquals(2, twoPointer.searchTriplets(new int[]{-1, 0, 2, 3}, 3));
+        assertEquals(4, twoPointer.searchTriplets(new int[]{-1, 4, 2, 1, 3}, 5));
+    }
 }
